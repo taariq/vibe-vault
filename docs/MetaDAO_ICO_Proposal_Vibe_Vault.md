@@ -15,7 +15,7 @@ Built on Paloma Chain's cross-chain infrastructure, Vibe Vault eliminates the tr
 
 The platform launches with **kGOLDt** as its flagship example—a gold-backed yield vault targeting 8% APY on tokenized gold (XAUt). This sophisticated strategy demonstrates Vibe Vault's capability to handle complex flows: depositing XAUt as Aave collateral, borrowing USDC at 50% LTV, deploying to mRE7YIELD, and executing daily harvests with automated swaps. If the AI can build kGOLDt, it can build virtually any DeFi strategy.
 
-Vibe Vault is powered by **SerenDB**, a production-ready AI-native database that serves as the platform's core data layer, managing vault configurations, deployment history, real-time performance analytics, and the contextual intelligence needed for sophisticated vault generation.
+Vibe Vault is powered by **[SerenDB](https://serendb.com)**, a production-ready AI-native database that serves as the platform's core data layer, managing vault configurations, deployment history, real-time performance analytics, and the contextual intelligence needed for sophisticated vault generation.
 
 ---
 
@@ -59,7 +59,7 @@ Every AI-generated contract includes automated safety checks: LTV monitoring, sl
 
 ## 4. Technical Architecture
 
-**Vibe Vault's architecture combines three key technologies: AI-powered code generation, Paloma Chain's cross-chain infrastructure, and SerenDB's intelligent data layer.**
+**Vibe Vault's architecture combines three key technologies: AI-powered code generation, Paloma Chain's cross-chain infrastructure, and [SerenDB](https://serendb.com)'s intelligent data layer.**
 
 ### Paloma Chain: Decentralized Multi-Chain Execution
 
@@ -209,7 +209,7 @@ By purchasing or attempting to purchase $VVAULT Tokens, you confirm that you hav
 **Project Lead:** Taariq Lewis
 **GitHub:** https://github.com/palomachain
 **Paloma Documentation:** https://docs.palomachain.com/
-**SerenDB:** Production-ready AI-native database (integration partner)
+**SerenDB:** https://serendb.com - Production-ready AI-native database (integration partner)
 
 **Flagship Vault Specification:**
 kGOLDt - Gold-backed yield vault targeting 8% APY on XAUt
