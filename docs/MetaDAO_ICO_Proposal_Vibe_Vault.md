@@ -4,7 +4,6 @@
 **Token Symbol:** VVAULT
 **Funding Target:** $1,000,000 - $2,000,000
 **Development Timeline:** 3-6 months
-**Monthly Allowance:** $10,000 (following MetaDAO standard)
 
 ---
 
@@ -84,7 +83,7 @@ SerenDB serves as Vibe Vault's memory and context engine. It stores vault config
 - **10,000,000 VVAULT** distributed proportionally to ICO contributors
 - **2,000,000 VVAULT + 20% of raised USDC** paired in liquidity pool
 - **Team and advisor allocations** determined through futarchy governance with pay-for-performance unlocks proportional to token price premium over launch price
-- **Remaining USDC** locked in futarchy-governed DAO treasury with $10,000 monthly allowance (following MetaDAO standard)
+- **Remaining USDC** locked in futarchy-governed DAO treasury
 
 ### VVAULT Governance: Control Over Platform Economics
 
@@ -176,8 +175,6 @@ Vibe Vault aligns perfectly with MetaDAO's core principles:
 **Pay-for-Performance**: Team allocations unlock proportionally to token price appreciation, ensuring long-term alignment with community success.
 
 **Unruggability**: Treasury funds and protocol decisions are protected by futarchy governance, eliminating the risk of malicious teams rugging contributors.
-
-**$10K Monthly Allowance**: Following MetaDAO's standard allowance model, ensuring sustainable operations while protecting treasury funds through governance.
 
 ---
 
