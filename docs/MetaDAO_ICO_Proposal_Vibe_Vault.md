@@ -3,7 +3,8 @@
 **Project Name:** Vibe Vault
 **Token Symbol:** VVAULT
 **Funding Target:** $1,000,000 - $2,000,000
-**Development Timeline:** 12-18 months
+**Development Timeline:** 3-6 months
+**Monthly Allowance:** $10,000 (following MetaDAO standard)
 
 ---
 
@@ -83,7 +84,7 @@ SerenDB serves as Vibe Vault's memory and context engine. It stores vault config
 - **10,000,000 VVAULT** distributed proportionally to ICO contributors
 - **2,000,000 VVAULT + 20% of raised USDC** paired in liquidity pool
 - **Team and advisor allocations** determined through futarchy governance with pay-for-performance unlocks proportional to token price premium over launch price
-- **Remaining USDC** locked in futarchy-governed DAO treasury with monthly allowance
+- **Remaining USDC** locked in futarchy-governed DAO treasury with $10,000 monthly allowance (following MetaDAO standard)
 
 ### VVAULT Governance: Control Over Platform Economics
 
@@ -106,9 +107,19 @@ All major decisions—treasury spending beyond the monthly allowance, protocol u
 
 ## 6. Use of Funds ($1M - $2M Raise)
 
-**The funds will support full development and launch of both Vibe Vault and SerenDB over 12-18 months.**
+**The funds will support full development and launch of both Vibe Vault and SerenDB over 3-6 months with an aggressive development timeline.**
 
-### Platform Development (40% - $400K-$800K)
+### Engineering Team (50% - $500K-$1M)
+**5 Full-Time Engineers @ $250K/year salary**
+- 3 months minimum: $312,500
+- 6 months maximum: $625,000
+- Team composition:
+  - 2 Senior Smart Contract Engineers (Vyper, Solidity, CosmWasm)
+  - 1 AI/ML Engineer (contract generation, NLP pipeline)
+  - 1 Full-Stack Engineer (Paloma LightNode, frontend, backend)
+  - 1 DevOps/Infrastructure Engineer (Paloma integration, SerenDB deployment)
+
+### Platform Development (20% - $200K-$400K)
 
 **Paloma LightNode Integration (Decentralized Front-End):**
 - Truly decentralized, self-hosted front-end deployment via Paloma LightNode architecture
@@ -132,76 +143,73 @@ All major decisions—treasury spending beyond the monthly allowance, protocol u
 - Cross-chain transaction coordination and monitoring
 - Integration with Paloma validator network for trustless RPC access
 
-### SerenDB Deployment & Scaling (25% - $250K-$500K)
+### SerenDB Deployment & Scaling (12% - $120K-$240K)
 - Production infrastructure deployment and scaling
 - AI-native database optimization for vault data, contract templates, and performance analytics
 - Integration with Vibe Vault platform (vault configs, deployment history, AI context storage)
 - Real-time blockchain state indexing and query optimization
 - Hosting infrastructure and operational costs
 
-### Security & Audits (15% - $150K-$300K)
+### Security & Audits (10% - $100K-$200K)
 - Smart contract template audits (ERC-4626 vaults, Vyper contracts, CosmWasm jobs)
 - AI generation system security review and adversarial testing
 - Compass EVM integration security assessment
 - Penetration testing and vulnerability assessments
-- Ongoing security monitoring and bug bounties
+- Bug bounty program
 
-### Multi-Chain Infrastructure (10% - $100K-$200K)
+### Multi-Chain Infrastructure (5% - $50K-$100K)
 - Integration with Paloma validator network and Pigeon relayer system
 - Compass EVM deployment for all supported target chains
 - Testing and validation across Paloma-supported blockchains
 - Chain-specific contract adaptations and gas optimizations
 - Monitoring and maintenance tooling for cross-chain execution
 
-### Marketing & Community (5% - $50K-$100K)
+### Marketing & Community (2% - $20K-$40K)
 - Documentation and educational content
 - Community building and developer relations
 - Launch campaigns and DeFi protocol partnerships
-- Conference presence and ecosystem development
 
-### Operating Expenses (5% - $50K-$100K)
+### Operating Expenses (1% - $10K-$20K)
 - Legal and compliance
 - Administrative overhead
-- Contingency reserve
 
 ---
 
 ## 7. Roadmap & Milestones
 
-**Vibe Vault will deliver a production-ready platform over 12-18 months with phased rollout.**
+**Vibe Vault will deliver a production-ready platform over 3-6 months with aggressive sprint-based development.**
 
-### Phase 1: Foundation & Core Infrastructure (Months 1-4)
+### Month 1: Foundation Sprint
+- Engineering team onboarding and architecture finalization
 - SerenDB production deployment and AI context layer setup
-- Paloma LightNode integration and decentralized front-end architecture
-- AI contract generation pipeline (initial Vyper templates for simple strategies)
-- CosmWasm job creation system for Paloma automation
+- Paloma LightNode integration architecture
+- AI contract generation pipeline (initial Vyper templates)
+- CosmWasm job creation system design
+- **Milestone: Development environment ready, kGOLDt specification finalized**
+
+### Month 2: Core Development Sprint
+- AI contract generation for simple strategies (single-protocol vaults)
+- Paloma LightNode decentralized front-end MVP
 - Basic vault deployment to 3-5 Paloma-supported chains
+- Backend API and authentication system
+- SerenDB integration with vault tracking
 - **Milestone: Deploy kGOLDt as proof-of-concept flagship vault**
 
-### Phase 2: AI Enhancement & Multi-Chain Expansion (Months 5-8)
-- Advanced AI contract generation supporting complex multi-step strategies
+### Month 3: Advanced Features Sprint
+- Advanced AI contract generation (multi-step strategies)
 - AI contract audit system with vulnerability detection
-- Compass EVM integration across all Paloma target chains
-- Python/JavaScript code generation for blockchain state queries
-- Expand to 10+ chains supported by Paloma validators
-- User authentication and vault management dashboard
-- **Milestone: Public beta launch with community vault creators**
+- Compass EVM integration for cross-chain execution
+- Python/JavaScript code generation for blockchain queries
+- User dashboard and vault management interface
+- **Milestone: Beta platform launch with multiple example vaults**
 
-### Phase 3: Security Hardening & Optimization (Months 9-12)
+### Months 4-6 (If Extended Timeline): Polish & Launch Sprint
 - Comprehensive security audits of all contract templates
-- AI generation system adversarial testing and safety improvements
-- Gas optimization across all supported chains
-- Real-time performance analytics and monitoring tools
-- Cross-chain transaction coordination improvements
-- **Milestone: Mainnet launch with audited contract library**
-
-### Phase 4: Ecosystem Growth & Advanced Features (Months 13-18)
-- Advanced strategy templates (leverage, LP positions, auto-rebalancing)
-- Community-contributed strategy library and sharing
-- Enhanced SerenDB analytics and vault performance tracking
-- Developer SDK for programmatic vault deployment
-- Partnership integrations with major DeFi protocols
-- **Milestone: $10M+ TVL across deployed vaults and 1,000+ active vault creators**
+- Gas optimization across supported chains
+- Expand to 10+ Paloma-supported chains
+- Enhanced analytics and monitoring tools
+- Community vault creator onboarding
+- **Milestone: Mainnet launch with audited contract library and first 100 community-deployed vaults**
 
 ---
 
@@ -216,6 +224,8 @@ Vibe Vault aligns perfectly with MetaDAO's core principles:
 **Pay-for-Performance**: Team allocations unlock proportionally to token price appreciation, ensuring long-term alignment with community success.
 
 **Unruggability**: Treasury funds and protocol decisions are protected by futarchy governance, eliminating the risk of malicious teams rugging contributors.
+
+**$10K Monthly Allowance**: Following MetaDAO's standard allowance model, ensuring sustainable operations while protecting treasury funds through governance.
 
 ---
 
