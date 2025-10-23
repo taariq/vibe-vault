@@ -186,75 +186,81 @@ YOU MUST follow this debugging framework for ANY technical issue:
 
 ---
 
-# Project: Vibe-Vault (kGOLDt)
+# Project: Vibe-Vault
 
 ## Overview
 
-Vibe-Vault is a DeFi yield vault implementing **kGOLDt** - a gold-backed yield protocol targeting 8% APY on tokenized gold (XAUt). Part of the MetaDAO ecosystem, funded through Omnipair launch ($1.118M raised).
+Vibe-Vault is a no-code DeFi vault creation platform that democratizes access to yield generation strategies across multiple blockchains using AI-powered smart contract generation. The platform launches with a **cross-chain leveraged perpetual vault** as its flagship example - demonstrating sophisticated cross-chain coordination, automated market making, and tokenized claim systems.
 
-**User Flow:** Deposit XAUt → Receive kGOLDt shares → Earn yield → Withdraw XAUt (now worth more)
+**Sample Vault Flow:** Propose vault → Users deposit USDC cross-chain → Reaches AUM threshold → 90% deploys to Hyperliquid perpetual position → 10% pairs with vault tokens for DEX liquidity → Users receive ERC-20 vault tokens → Vault matures or liquidates → Users burn tokens to redeem USDC
 
 ## Core Architecture
 
-The system consists of three main Solidity contracts:
+The system consists of multiple components working together across chains:
 
-### 1. kGOLDt.sol (ERC-4626 Vault)
+### 1. Vault Contract (ERC-4626 Standard)
 - Tokenized vault implementing ERC-4626 standard
-- Manages share issuance and redemption
-- Tracks exchange rate (initially 1:1, increases with yield)
-- Handles deposit/withdraw logic with 15% buffer system
-- Fee structure: 0.5% annual management + 10% performance fee
+- Manages share issuance proportional to USDC contributions
+- Tracks AUM threshold for automated activation
+- Handles cross-chain deposit aggregation via LayerZero/Wormhole
+- Coordinates vault lifecycle (proposal → funding → activation → resolution)
 
-### 2. VaultManager.sol
-- Manages strategy allocation and capital deployment
-- Handles harvest operations (converting USDC yield to XAUt)
-- Coordinates rebalancing across strategies
-- Tracks debt ratios and available credit
+### 2. Cross-Chain Bridge Integration
+- Aggregates USDC contributions from multiple chains (Ethereum, Arbitrum, Optimism, Base)
+- Bridges 90% of funds to Hyperliquid for perpetual position
+- Bridges resolved funds back to Arbitrum/Paloma for redemption
+- Supports multi-chain redemption for user convenience
 
-### 3. Strategy Implementations (AaveMidasStrategy.sol)
-- Deploys XAUt as collateral on Aave V3 isolated market
-- Borrows USDC at 50% LTV (max 60%)
-- Deploys borrowed USDC to mRE7YIELD (21% APY target)
-- Handles daily harvest: claims USDC rewards, swaps to XAUt via 1inch/Uniswap
-- Manages LTV rebalancing and emergency exit scenarios
+### 3. Hyperliquid Perpetual Strategy
+- Opens leveraged perpetual positions matching vault criteria (asset, leverage, direction)
+- Manages position lifecycle through to maturity or liquidation
+- Executes automated position closure on vault resolution
+- Returns USDC proceeds for distribution to token holders
 
-## Key Strategy Parameters
+### 4. DEX Liquidity Pool (10% Reserve)
+- Creates Paloma DEX liquidity pool with 10% of raised USDC + vault tokens
+- Enables secondary market trading before vault resolution
+- Provides price discovery for vault token value
+- Liquidity remains active throughout vault lifecycle
 
-- **Asset:** XAUt (tokenized gold) only
-- **Collateral Platform:** Aave V3 isolated market
-- **Target LTV:** 50% (max 60%)
-- **Yield Source:** mRE7YIELD (21% APY)
-- **Buffer:** 15% kept liquid for instant withdrawals
-- **Harvest Frequency:** Daily (automated via Gelato)
-- **Target APY:** 8% on deposited XAUt
+## Key Vault Parameters
 
-## Withdrawal Logic
+- **Contribution Asset:** USDC (cross-chain)
+- **Target Deployment:** Hyperliquid perpetual futures
+- **Fund Allocation:** 90% to perpetuals, 10% to DEX liquidity
+- **Vault Token:** ERC-20 representing proportional equity
+- **Resolution:** Time-based maturity or liquidation trigger
+- **Redemption:** Burn tokens to claim USDC share
 
-- **Small withdrawals (<15% of buffer):** Instant, 0% fee
-- **Large withdrawals (>15%):** Queued, processed at next harvest (~24h), 0% fee
-- Buffer refilled during each harvest cycle
+## Vault Lifecycle
+
+1. **Proposal Phase:** User proposes vault with asset, leverage, AUM threshold
+2. **Funding Phase:** Cross-chain USDC contributions until threshold reached
+3. **Activation:** 90% bridged to Hyperliquid, 10% paired for liquidity
+4. **Active Phase:** Perpetual position open, tokens tradable on DEX
+5. **Resolution:** Vault matures or liquidates, position closed
+6. **Redemption:** Users burn tokens to claim USDC proceeds
 
 ## Frontend Structure
 
-Four-tab interface (Deposit | Withdraw | Dashboard | Strategies):
+Multi-tab interface (Propose | Deposit | Portfolio | Redemption):
 
-1. **Deposit Page:** Two-panel form showing XAUt input → kGOLDt preview, current exchange rate, TVL, APY
-2. **Withdraw Page:** Two-panel form showing kGOLDt burn → XAUt received, withdrawal type indicator (instant/queued), performance fee calculation
-3. **Dashboard:** User position tracking, performance metrics (APY, daily earnings, lifetime earnings), vault health metrics
-4. **Strategies Page:** Strategy status, Aave V3 details (LTV, liquidation threshold), Midas details (deployed USDC, APY), automation info
+1. **Propose Page:** Vault creation interface specifying asset, leverage, target AUM, maturity conditions
+2. **Deposit Page:** Cross-chain contribution interface showing available vaults, AUM progress, estimated tokens
+3. **Portfolio:** User vault holdings, current vault status, DEX trading links, unrealized P&L
+4. **Redemption:** Burn-to-claim interface for resolved vaults with transparent distribution calculations
 
 ## Integration Points
 
-- **Aave V3:** Collateral management and USDC borrowing
-- **Midas (mRE7YIELD):** Primary yield generation (21% APY target)
-- **1inch/Uniswap:** USDC → XAUt swaps during harvest
-- **Gelato:** Automated daily harvest execution
+- **Hyperliquid:** Leveraged perpetual futures execution
+- **LayerZero/Wormhole:** Cross-chain USDC bridging and aggregation
+- **Paloma DEX:** Secondary market liquidity for vault tokens
+- **Paloma Chain:** Cross-chain coordination and automated execution
 
 ## Project Context
 
 - Currently in **specification phase** - no implementation exists yet
 - Apache 2.0 licensed open source project
-- Operates within MetaDAO's Futarchy-based governance model
-- Specs documented in [docs/kGOLDt - Ultra TL;DR Build Spec.md](docs/kGOLDt - Ultra TL;DR Build Spec.md)
+- Sample vault specs in [docs/Cross-Chain Leveraged Perpetual Vault.md](docs/Cross-Chain Leveraged Perpetual Vault.md)
 - MetaDAO funding context in [docs/Omnipair_Proposal.md](docs/Omnipair_Proposal.md)
 - Paloma Chain documentation available in [docs/paloma_chain_docs.md](docs/paloma_chain_docs.md)

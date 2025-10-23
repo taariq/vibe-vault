@@ -15,7 +15,7 @@
 
 Built on [Paloma Chain](https://palomachain.com)'s cross-chain infrastructure, Vibe Vault eliminates the traditional barriers to DeFi protocol development: expensive audits, complex smart contract development, and multi-chain deployment headaches. Users describe any vault strategy they envision—from simple single-protocol deposits to complex multi-step strategies involving collateralization, leverage, yield farming, and automated rebalancing—and Vibe Vault's AI generates production-ready smart contract code with built-in safety checks and risk management.
 
-The platform launches with **kGOLDt** as its flagship example—a gold-backed yield vault targeting 8% APY on tokenized gold (XAUt). This sophisticated strategy demonstrates Vibe Vault's capability to handle complex flows: depositing XAUt as Aave collateral, borrowing USDC at 50% LTV, deploying to mRE7YIELD, and executing daily harvests with automated swaps. If the AI can build kGOLDt, it can build virtually any DeFi strategy.
+The platform launches with a **cross-chain leveraged perpetual vault** as its flagship example—demonstrating sophisticated cross-chain coordination, automated market making, and tokenized claim systems. This vault aggregates USDC deposits across multiple chains, deploys 90% to Hyperliquid perpetual positions, and uses the remaining 10% to seed DEX liquidity for vault tokens. If the AI can build this complex cross-chain strategy, it can build virtually any DeFi vault.
 
 Vibe Vault is powered by **[SerenDB](https://serendb.com)**, a production-ready AI-native database that serves as the platform's core data layer, managing vault configurations, deployment history, real-time performance analytics, and the contextual intelligence needed for sophisticated vault generation.
 
@@ -153,7 +153,7 @@ Early adopter incentives, vault creator grants, community rewards program, bug b
 - Paloma LightNode integration architecture
 - AI contract generation pipeline (initial Vyper templates)
 - CosmWasm job creation system design
-- **Milestone: Development environment ready, kGOLDt specification finalized**
+- **Milestone: Development environment ready, cross-chain vault specification finalized**
 
 ### Month 2: Core Development Sprint
 - AI contract generation for simple strategies (single-protocol vaults)
@@ -161,7 +161,7 @@ Early adopter incentives, vault creator grants, community rewards program, bug b
 - Basic vault deployment to 3-5 Paloma-supported chains
 - Backend API and authentication system
 - SerenDB integration with vault tracking
-- **Milestone: Deploy kGOLDt as proof-of-concept flagship vault**
+- **Milestone: Deploy cross-chain leveraged perpetual vault as proof-of-concept**
 
 ### Month 3: Advanced Features Sprint
 - Advanced AI contract generation (multi-step strategies)
@@ -241,6 +241,6 @@ By purchasing or attempting to purchase Tokens, you confirm that you have read, 
 **SerenDB:** https://serendb.com - Production-ready AI-native database (integration partner)
 **Legion Platform:** https://legion.cc - Merit-based, MiCA-compliant fundraising platform
 
-**Flagship Vault Specification:**
-kGOLDt - Gold-backed yield vault targeting 8% APY on XAUt
-See: `/docs/kGOLDt - Ultra TL;DR Build Spec.md`
+**Sample Vault Specification:**
+Cross-Chain Leveraged Perpetual Vault - Demonstrating multi-chain deposits, Hyperliquid integration, and automated claims
+See: `/docs/Cross-Chain Leveraged Perpetual Vault.md`
