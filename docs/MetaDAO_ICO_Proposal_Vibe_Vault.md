@@ -107,71 +107,23 @@ All major decisions—treasury spending beyond the monthly allowance, protocol u
 
 ## 6. Use of Funds ($1M - $2M Raise)
 
-**The funds will support full development and launch of both Vibe Vault and SerenDB over 3-6 months with an aggressive development timeline.**
+**The funds will support full development and launch of both Vibe Vault and SerenDB over 3-6 months.**
 
-### Engineering Team (50% - $500K-$1M)
-**5 Full-Time Engineers @ $250K/year salary**
-- 3 months minimum: $312,500
-- 6 months maximum: $625,000
-- Team composition:
-  - 2 Senior Smart Contract Engineers (Vyper, Solidity, CosmWasm)
-  - 1 AI/ML Engineer (contract generation, NLP pipeline)
-  - 1 Full-Stack Engineer (Paloma LightNode, frontend, backend)
-  - 1 DevOps/Infrastructure Engineer (Paloma integration, SerenDB deployment)
+### Product Design, Development, and Auditing (70% - $700K-$1.4M)
 
-### Platform Development (20% - $200K-$400K)
+Core platform development including Paloma LightNode integration for decentralized front-end, AI contract generation system (Vyper, Solidity, CosmWasm), multi-chain deployment engine, Compass EVM Actions integration, backend infrastructure, user authentication, vault management dashboard, and comprehensive security audits of all contract templates and AI systems.
 
-**Paloma LightNode Integration (Decentralized Front-End):**
-- Truly decentralized, self-hosted front-end deployment via Paloma LightNode architecture
-- Eliminates dependency on centralized hosting - anyone can run Vibe Vault locally
-- LightNode client distribution ensuring censorship-resistant access to vault creation
-- Integration with Paloma's validator network for decentralized application delivery
+### SerenDB Deployment & Scaling (15% - $150K-$300K)
 
-**AI Contract Generation System:**
-- Multi-language smart contract generation: **Vyper** (for enhanced safety and auditability) and **Solidity** (for EVM compatibility)
-- **CosmWasm** contract generation for Paloma job creation and cross-chain automation management
-- **AI Contract Audit System**: Pre-deployment security analysis, vulnerability detection, and safety validation of AI-generated code
-- **Compass EVM Actions** integration for cross-chain vault execution and state management
-- **Python and JavaScript code generation** for blockchain state reading, transaction monitoring, and front-end data presentation
-- Natural language processing pipeline for strategy interpretation
-- Security validation layer with automated exploit detection
+Production infrastructure deployment, AI-native database optimization for vault data and analytics, integration with Vibe Vault platform, real-time blockchain state indexing, and hosting infrastructure.
 
-**Backend Infrastructure:**
-- API layer for vault management and deployment orchestration
-- User authentication and authorization system
-- **Blockchain query endpoints** for reading account balances, transaction history, and vault state across all supported chains
-- Cross-chain transaction coordination and monitoring
-- Integration with Paloma validator network for trustless RPC access
+### Multi-Chain Infrastructure & Operations (10% - $100K-$200K)
 
-### SerenDB Deployment & Scaling (12% - $120K-$240K)
-- Production infrastructure deployment and scaling
-- AI-native database optimization for vault data, contract templates, and performance analytics
-- Integration with Vibe Vault platform (vault configs, deployment history, AI context storage)
-- Real-time blockchain state indexing and query optimization
-- Hosting infrastructure and operational costs
+Integration with Paloma validator network and Pigeon relayer system, Compass EVM deployment across target chains, testing and validation, monitoring tools, legal and compliance, and administrative overhead.
 
-### Security & Audits (10% - $100K-$200K)
-- Smart contract template audits (ERC-4626 vaults, Vyper contracts, CosmWasm jobs)
-- AI generation system security review and adversarial testing
-- Compass EVM integration security assessment
-- Penetration testing and vulnerability assessments
-- Bug bounty program
+### Marketing & Community (5% - $50K-$100K)
 
-### Multi-Chain Infrastructure (5% - $50K-$100K)
-- Integration with Paloma validator network and Pigeon relayer system
-- Compass EVM deployment for all supported target chains
-- Testing and validation across Paloma-supported blockchains
-- Chain-specific contract adaptations and gas optimizations
-- Monitoring and maintenance tooling for cross-chain execution
-
-### Marketing & Community (2% - $20K-$40K)
-- Documentation and educational content
-- Community building and developer relations
-- Launch campaigns and DeFi protocol partnerships
-
-### Operating Expenses (1% - $10K-$20K)
-- Legal and compliance
-- Administrative overhead
+Documentation, community building, developer relations, launch campaigns, and DeFi protocol partnerships.
 
 ---
 
