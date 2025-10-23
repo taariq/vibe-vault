@@ -11,7 +11,7 @@
 
 **Vibe Vault** is a no-code DeFi vault creation platform that democratizes access to yield generation strategies across multiple blockchains. Using advanced AI-powered smart contract generation, Vibe Vault enables anyone—regardless of technical expertise—to design, deploy, and manage sophisticated DeFi vaults by simply describing their strategy in natural language.
 
-Built on Paloma Chain's cross-chain infrastructure, Vibe Vault eliminates the traditional barriers to DeFi protocol development: expensive audits, complex smart contract development, and multi-chain deployment headaches. Users describe any vault strategy they envision—from simple single-protocol deposits to complex multi-step strategies involving collateralization, leverage, yield farming, and automated rebalancing—and Vibe Vault's AI generates production-ready smart contract code with built-in safety checks and risk management.
+Built on [Paloma Chain](https://palomachain.com)'s cross-chain infrastructure, Vibe Vault eliminates the traditional barriers to DeFi protocol development: expensive audits, complex smart contract development, and multi-chain deployment headaches. Users describe any vault strategy they envision—from simple single-protocol deposits to complex multi-step strategies involving collateralization, leverage, yield farming, and automated rebalancing—and Vibe Vault's AI generates production-ready smart contract code with built-in safety checks and risk management.
 
 The platform launches with **kGOLDt** as its flagship example—a gold-backed yield vault targeting 8% APY on tokenized gold (XAUt). This sophisticated strategy demonstrates Vibe Vault's capability to handle complex flows: depositing XAUt as Aave collateral, borrowing USDC at 50% LTV, deploying to mRE7YIELD, and executing daily harvests with automated swaps. If the AI can build kGOLDt, it can build virtually any DeFi strategy.
 
@@ -47,7 +47,7 @@ Users interact with an intuitive interface where they describe their desired yie
 Translates natural language descriptions into production-ready Solidity code implementing the ERC-4626 vault standard. The AI has deep knowledge of DeFi protocols, optimal strategy patterns, gas optimization techniques, and security best practices. It generates not just the core vault logic, but also emergency exit functions, rebalancing mechanisms, and proper access controls.
 
 ### 2. Multi-Chain Deployment Engine
-Powered by Paloma Chain, Vibe Vault can deploy generated vaults to any blockchain in Paloma's validator network without requiring users to manage multiple development environments, RPC endpoints, or deployment scripts. One click deploys the same strategy across Ethereum, BSC, Polygon, Arbitrum, and beyond.
+Powered by [Paloma Chain](https://palomachain.com), Vibe Vault can deploy generated vaults to any blockchain in Paloma's validator network without requiring users to manage multiple development environments, RPC endpoints, or deployment scripts. One click deploys the same strategy across Ethereum, BSC, Polygon, Arbitrum, and beyond.
 
 ### 3. SerenDB Intelligence Layer
 The AI-native database provides the context, historical performance data, and real-time analytics that make intelligent vault generation possible. SerenDB tracks every deployed vault's performance, learns from successful strategies, and helps the AI make better recommendations. It also powers the dashboard where users monitor their vaults' TVL, APY, transaction history, and risk metrics.
@@ -59,7 +59,7 @@ Every AI-generated contract includes automated safety checks: LTV monitoring, sl
 
 ## 4. Technical Architecture
 
-**Vibe Vault's architecture combines three key technologies: AI-powered code generation, Paloma Chain's cross-chain infrastructure, and [SerenDB](https://serendb.com)'s intelligent data layer.**
+**Vibe Vault's architecture combines three key technologies: AI-powered code generation, [Paloma Chain](https://palomachain.com)'s cross-chain infrastructure, and [SerenDB](https://serendb.com)'s intelligent data layer.**
 
 ### Paloma Chain: Decentralized Multi-Chain Execution
 
@@ -207,6 +207,7 @@ By purchasing or attempting to purchase $VVAULT Tokens, you confirm that you hav
 ## Contact & Links
 
 **Project Lead:** Taariq Lewis
+**Paloma Chain:** https://palomachain.com - Decentralized cross-chain messaging blockchain
 **GitHub:** https://github.com/palomachain
 **Paloma Documentation:** https://docs.palomachain.com/
 **SerenDB:** https://serendb.com - Production-ready AI-native database (integration partner)
