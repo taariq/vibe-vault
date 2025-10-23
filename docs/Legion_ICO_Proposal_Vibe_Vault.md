@@ -2,7 +2,7 @@
 
 **Project Name:** Vibe Vault
 **Token Symbol:** VVAULT
-**Funding Target:** $5,000,000
+**Funding Target:** $3,000,000
 **Development Timeline:** 3-6 months
 **Token Generation Event:** 6 months from close (all tokens unlocked at TGE)
 **Total Token Supply:** 10,000,000 VVAULT
@@ -83,15 +83,15 @@ SerenDB serves as Vibe Vault's memory and context engine. It stores vault config
 
 ### Token Distribution:
 - **8,000,000 VVAULT (80%)** distributed proportionally to Legion ICO participants based on merit and contribution
-- **1,800,000 VVAULT (18%)** + 20% of raised USDC ($1,000,000) paired in DEX liquidity pools
+- **1,800,000 VVAULT (18%)** + 20% of raised USDC ($600,000) paired in DEX liquidity pools
 - **200,000 VVAULT (2%)** reserved for centralized exchange (CEX) listing liquidity and market making
-- **Remaining $4,000,000 USDC** locked in Paloma Foundation Treasury for development and operations
+- **Remaining $2,400,000 USDC** locked in Paloma Foundation Treasury for development and operations
 
 ### Token Generation Event (TGE):
 - **Timeline:** 6 months from fundraise close
 - **Unlock Schedule:** All tokens fully unlocked at TGE - no vesting periods
 - **Exchange Listings:** Simultaneous CEX and DEX listings at TGE
-- **Initial Liquidity:** $1M USDC + 1.8M VVAULT paired across major DEXes on supported chains
+- **Initial Liquidity:** $600K USDC + 1.8M VVAULT paired across major DEXes on supported chains
 - **CEX Liquidity:** 200K VVAULT reserved for market making and exchange partnerships
 
 ### VVAULT Governance: Control Over Platform Economics
@@ -109,15 +109,15 @@ All fees collected from vault creation and ongoing vault operations flow to VVAU
 
 ---
 
-## 6. Use of Funds ($5M Raise)
+## 6. Use of Funds ($3M Raise)
 
 **The funds will support full development, launch, and aggressive market expansion of Vibe Vault over 3-6 months.**
 
-### Product Design, Development, and Auditing (50% - $2.5M)
+### Product Design, Development, and Auditing (50% - $1.5M)
 
 Core platform development including Paloma LightNode integration for decentralized front-end, AI contract generation system (Vyper, Solidity, CosmWasm), multi-chain deployment engine, Compass EVM Actions integration, backend infrastructure, user authentication, vault management dashboard, and comprehensive security audits of all contract templates and AI systems.
 
-### Marketing, Growth & CEX Partnerships (20% - $1M)
+### Marketing, Growth & CEX Partnerships (20% - $600K)
 
 Aggressive go-to-market strategy including:
 - Centralized exchange listing campaigns and partnerships
@@ -129,15 +129,15 @@ Aggressive go-to-market strategy including:
 - Launch campaigns across multiple chains
 - DeFi protocol partnerships and integrations
 
-### SerenDB Deployment & Scaling (15% - $750K)
+### SerenDB Deployment & Scaling (15% - $450K)
 
 Production infrastructure deployment, AI-native database optimization for vault data and analytics, integration with Vibe Vault platform, real-time blockchain state indexing across all supported chains, and hosting infrastructure for global distribution.
 
-### Multi-Chain Infrastructure & Operations (10% - $500K)
+### Multi-Chain Infrastructure & Operations (10% - $300K)
 
 Integration with Paloma validator network and Pigeon relayer system, Compass EVM deployment across all target chains, comprehensive testing and validation across Paloma-supported blockchains, monitoring tools, legal and compliance, and administrative overhead.
 
-### Community Incentives & Ecosystem Fund (5% - $250K)
+### Community Incentives & Ecosystem Fund (5% - $150K)
 
 Early adopter incentives, vault creator grants, community rewards program, bug bounties, and ecosystem development initiatives to drive adoption and engagement.
 
