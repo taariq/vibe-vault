@@ -32,9 +32,6 @@ Vibe Vault democratizes DeFi vault creation by enabling anyone to design, deploy
 **[docs/Cross-Chain Leveraged Perpetual Vault.md](docs/Cross-Chain Leveraged Perpetual Vault.md)**
 - Complete specification for flagship cross-chain perpetual vault example demonstrating USDC deposits, Hyperliquid integration, and automated market making; use as reference architecture for complex multi-chain vaults.
 
-**[docs/kGOLDt - Ultra TL;DR Build Spec.md](docs/kGOLDt - Ultra TL;DR Build Spec.md)**
-- Gold-backed (XAUt) yield vault specification with Aave collateral and Midas Protocol deployment targeting 8% APY; use as reference for collateralized lending strategies.
-
 ---
 
 ### 🤝 Partnership Documentation
