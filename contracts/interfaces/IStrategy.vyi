@@ -1,0 +1,82 @@
+# @version 0.3.10
+"""
+@title IStrategy Interface
+@notice Interface for kGOLDt yield strategies
+@dev All strategies must implement this interface to work with VaultManager
+"""
+
+@external
+@view
+def want() -> address:
+    """
+    @notice Returns the address of the token this strategy wants (XAUt)
+    @return Address of XAUt token
+    """
+    ...
+
+@external
+@view
+def vault() -> address:
+    """
+    @notice Returns the vault address this strategy reports to
+    @return Address of kGOLDt vault
+    """
+    ...
+
+@external
+@view
+def estimatedTotalAssets() -> uint256:
+    """
+    @notice Estimates total assets under management in this strategy
+    @dev Includes deployed capital, pending rewards, and idle assets
+    @return Total assets in XAUt terms
+    """
+    ...
+
+@external
+@view
+def estimatedAPR() -> uint256:
+    """
+    @notice Estimates current APR of this strategy
+    @return APR in basis points (e.g., 2100 = 21%)
+    """
+    ...
+
+@external
+def deposit(assets: uint256) -> uint256:
+    """
+    @notice Deposit assets into the strategy
+    @dev Only callable by vault manager
+    @param assets Amount of XAUt to deposit
+    @return shares Strategy shares minted
+    """
+    ...
+
+@external
+def withdraw(shares: uint256, min_assets: uint256) -> uint256:
+    """
+    @notice Withdraw assets from the strategy
+    @dev Only callable by vault manager
+    @param shares Amount of strategy shares to burn
+    @param min_assets Minimum XAUt to receive (slippage protection)
+    @return assets Amount of XAUt withdrawn
+    """
+    ...
+
+@external
+def harvest() -> (uint256, uint256):
+    """
+    @notice Harvest yield and report profit/loss
+    @dev Only callable by keeper
+    @return profit Amount of XAUt profit realized
+    @return loss Amount of XAUt loss incurred
+    """
+    ...
+
+@external
+def emergencyExit():
+    """
+    @notice Exit all positions and return assets to vault
+    @dev Only callable by governance
+    """
+    ...

@@ -1,0 +1,20 @@
+[package]
+name = "kgoldt-harvest-job"
+version = "0.1.0"
+authors = ["Vibe Vault <hello@vibevault.io>"]
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+cosmwasm-std = "1.5"
+cosmwasm-schema = "1.5"
+cw-storage-plus = "1.2"
+schemars = "0.8"
+serde = { version = "1.0", default-features = false, features = ["derive"] }
+thiserror = "1.0"
+paloma-compass-evm = "0.1"
+
+[dev-dependencies]
+cw-multi-test = "0.20"
