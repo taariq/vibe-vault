@@ -126,7 +126,75 @@ Documentation, community building, developer relations, launch campaigns, and De
 
 ---
 
-## 7. Roadmap & Milestones
+## 7. Strategic Partnership - Yearn Finance
+
+### Vibe Vault × Yearn × Kalani: Democratizing Yearn Vault Creation
+
+**Partnership Announcement**
+
+Vibe Vault has partnered with **Yearn Finance** ($804M+ TVL) and **Kalani** (Yearn's vault management platform) to enable AI-powered creation of custom Yearn strategies.
+
+**What This Means:**
+
+🤖 **AI-Generated Yearn Vaults**
+- Users can "Vibe Code" custom Yearn V3 vault combinations using natural language
+- Generate ERC-4626 strategies based on Kalani's battle-tested specifications
+- Compose existing Yearn strategies into new custom allocations
+
+⚡ **Seamless Deployment & Execution**
+- Deploy custom vaults to Ethereum, Polygon, Arbitrum, Base via Paloma
+- Paloma Chain executes all deposits, withdrawals, and rebalancing
+- No RPC infrastructure required - validators handle everything
+
+🗄️ **Secure Data Management**
+- All vault configurations stored in SerenDB
+- Real-time performance tracking and analytics
+- AI learns from successful strategies to improve recommendations
+
+**Partnership Benefits:**
+
+**For Users:**
+- Create custom Yearn strategies without coding
+- Charge your own management fees (you become the vault operator)
+- Access $804M+ Yearn ecosystem TVL and proven strategies
+- Deploy in minutes vs. months of traditional development
+
+**For Yearn:**
+- Dramatically expands vault creator base from ~20 core developers to thousands
+- Increases protocol innovation velocity
+- New revenue streams from user-deployed vaults
+- Strengthens ecosystem through AI-powered composability
+
+**For Vibe Vault:**
+- **Day-1 Integration:** Immediate access to Yearn's proven vault infrastructure
+- **Validation:** Partnership with #1 DeFi yield aggregator ($804M+ TVL)
+- **Network Effects:** Every Yearn user becomes potential Vibe Vault creator
+- **Proven Strategies:** 18 battle-tested vaults to template and compose
+
+**Example Use Case:**
+
+```
+User prompt: "Create a Yearn vault that allocates 50% to Morpho Gauntlet
+WETH (0.99% APY) and 50% to vbETH yVault (2.25% APY) with automatic
+rebalancing when spread > 1%"
+
+↓ Vibe Vault AI generates ERC-4626 allocator vault
+↓ Deploys via Paloma to Ethereum mainnet
+↓ User sets 0.3% management fee
+↓ Strategy goes live in < 10 minutes
+```
+
+**Launch Metrics:**
+- **18 Yearn Vaults** ready for AI composition at launch
+- **$804.21M TVL** across Yearn ecosystem (potential market)
+- **3 Vault Types:** Allocator, Strategy, and Legacy vaults supported
+- **4 Chains:** Ethereum, Katana, Polygon, Arbitrum support
+
+*The Yearn partnership transforms Vibe Vault from concept to production-ready platform with battle-tested infrastructure from day one.*
+
+---
+
+## 8. Roadmap & Milestones
 
 **Vibe Vault will deliver a production-ready platform over 3-6 months with aggressive sprint-based development.**
 
