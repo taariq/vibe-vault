@@ -304,11 +304,6 @@ By purchasing or attempting to purchase Tokens, you confirm that you have read, 
 
 **Project Lead:** Taariq Lewis
 **Paloma Chain:** https://palomachain.com - Decentralized cross-chain messaging blockchain
-**GitHub:** https://github.com/palomachain
 **Paloma Documentation:** https://docs.palomachain.com/
 **SerenDB:** https://serendb.com - Production-ready AI-native database (integration partner)
 **Legion Platform:** https://legion.cc - Merit-based, MiCA-compliant fundraising platform
-
-**Sample Vault Specification:**
-Cross-Chain Leveraged Perpetual Vault - Demonstrating multi-chain deposits, Hyperliquid integration, and automated claims
-See: `/docs/Cross-Chain Leveraged Perpetual Vault.md`

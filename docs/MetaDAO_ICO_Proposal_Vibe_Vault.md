@@ -276,10 +276,5 @@ By purchasing or attempting to purchase $VVAULT Tokens, you confirm that you hav
 
 **Project Lead:** Taariq Lewis
 **Paloma Chain:** https://palomachain.com - Decentralized cross-chain messaging blockchain
-**GitHub:** https://github.com/palomachain
 **Paloma Documentation:** https://docs.palomachain.com/
 **SerenDB:** https://serendb.com - Production-ready AI-native database (integration partner)
-
-**Sample Vault Specification:**
-Cross-Chain Leveraged Perpetual Vault - Demonstrating multi-chain deposits, Hyperliquid integration, and automated claims
-See: `/docs/Cross-Chain Leveraged Perpetual Vault.md`
