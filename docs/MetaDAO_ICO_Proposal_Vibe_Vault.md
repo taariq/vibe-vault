@@ -132,7 +132,7 @@ Documentation, community building, developer relations, launch campaigns, and De
 
 **Partnership Announcement**
 
-Vibe Vault has partnered with **Yearn Finance** ($804M+ TVL) and **Kalani** (Yearn's vault management platform) to enable AI-powered creation of custom Yearn strategies.
+Vibe Vault has partnered with **Yearn Finance** ($965M+ TVL) and **Kalani** (Yearn's vault management platform) to enable AI-powered creation of custom Yearn strategies.
 
 **What This Means:**
 
@@ -156,7 +156,7 @@ Vibe Vault has partnered with **Yearn Finance** ($804M+ TVL) and **Kalani** (Yea
 **For Users:**
 - Create custom Yearn strategies without coding
 - Charge your own management fees (you become the vault operator)
-- Access $804M+ Yearn ecosystem TVL and proven strategies
+- Access $965M+ Yearn ecosystem TVL and proven strategies
 - Deploy in minutes vs. months of traditional development
 
 **For Yearn:**
@@ -167,9 +167,9 @@ Vibe Vault has partnered with **Yearn Finance** ($804M+ TVL) and **Kalani** (Yea
 
 **For Vibe Vault:**
 - **Day-1 Integration:** Immediate access to Yearn's proven vault infrastructure
-- **Validation:** Partnership with #1 DeFi yield aggregator ($804M+ TVL)
+- **Validation:** Partnership with #1 DeFi yield aggregator ($965M+ TVL)
 - **Network Effects:** Every Yearn user becomes potential Vibe Vault creator
-- **Proven Strategies:** 18 battle-tested vaults to template and compose
+- **Proven Strategies:** 33 battle-tested vaults to template and compose
 
 **Example Use Case:**
 
@@ -185,8 +185,8 @@ rebalancing when spread > 1%"
 ```
 
 **Launch Metrics:**
-- **18 Yearn Vaults** ready for AI composition at launch
-- **$804.21M TVL** across Yearn ecosystem (potential market)
+- **33 Yearn Vaults** ready for AI composition at launch
+- **$965.92M TVL** across Yearn ecosystem (potential market)
 - **3 Vault Types:** Allocator, Strategy, and Legacy vaults supported
 - **4 Chains:** Ethereum, Katana, Polygon, Arbitrum support
 
